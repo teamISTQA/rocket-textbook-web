@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- ロケット工学 教科書アイコン。maskable 対応のため主要形状は中央 80%（51.2〜460.8）に収める -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12304F"/>
+      <stop offset="1" stop-color="#0A1A2C"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0C14B"/>
+      <stop offset="1" stop-color="#C77B18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#sky)"/>
+
+  <!-- 軌道（弧）。中心 (256,300) 半径 150、-140° から -40° -->
+  <path d="M 141.1 203.6 A 150 150 0 0 1 370.9 203.6"
+        fill="none" stroke="#1F5C99" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- 機体。中心軸 x=256、先端 y=110、胴下端 y=330 -->
+  <path d="M 256 110
+           C 292 158, 306 210, 306 262
+           L 306 330
+           L 206 330
+           L 206 262
+           C 206 210, 220 158, 256 110 Z"
+        fill="#FFFFFF"/>
+  <!-- 窓。中心 (256,205) 半径 26 -->
+  <circle cx="256" cy="205" r="26" fill="#12304F"/>
+  <circle cx="256" cy="205" r="26" fill="none" stroke="#1F5C99" stroke-width="7"/>
+
+  <!-- フィン（左右対称、胴の外側 x=206/306 から x=160/352 へ） -->
+  <path d="M 206 268 L 160 340 L 160 372 L 206 330 Z" fill="#1F5C99"/>
+  <path d="M 306 268 L 352 340 L 352 372 L 306 330 Z" fill="#1F5C99"/>
+
+  <!-- ノズル。胴下端 y=330 から y=364、末広がり -->
+  <path d="M 216 330 L 296 330 L 312 364 L 200 364 Z" fill="#C3CCD4"/>
+
+  <!-- 排気。ノズル出口 y=364 から先端 y=452（中央 80% の下端 460.8 の内側） -->
+  <path d="M 212 366 C 232 410, 240 430, 256 452 C 272 430, 280 410, 300 366 Z" fill="url(#flame)"/>
+</svg>

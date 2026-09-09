@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" fill="#12304F"/>
+  <!-- 先端を尖らせ、胴は平行にして「ロケット」と読めるようにする -->
+  <path d="M16 2 C19 7, 20 11, 20 14 L20 20 L12 20 L12 14 C12 11, 13 7, 16 2 Z" fill="#FFFFFF"/>
+  <path d="M12 21 L20 21 L16 29 Z" fill="#F0A72B"/>
+</svg>
