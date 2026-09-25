@@ -1,5 +1,5 @@
 // 自動生成（tools/lock.mjs）。手で編集しない。
-const CACHE = 'rocket-textbook-locked-7a9e27bddb4eb50f';
+const CACHE = 'rocket-textbook-locked-b0111a942fefefea';
 const ASSETS = [
   "./",
   "./index.html",
